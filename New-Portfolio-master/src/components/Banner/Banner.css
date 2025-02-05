@@ -1,0 +1,56 @@
+.main {
+  background-image: url("../../assets/banner-bg.png");
+}
+
+@keyframes smoothBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-animation {
+  animation: smoothBounce 1s infinite;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #452846 0%,
+    #2b234d 51%,
+    #452846 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #dbdbdb;
+  border-radius: 10px;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .new_modify {
+    margin-top: 6rem !important;
+  }
+}
